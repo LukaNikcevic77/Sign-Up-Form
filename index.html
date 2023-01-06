@@ -12,45 +12,47 @@
 <body>
     <div class="left">
         <div class="black-box">
-            
+            <img src="/odin-lined.png" alt="odin-logo">
+            <h1>ODIN</h1>
         </div>
+        <p>Photo by <a href="">Halie West</a> on <a href="">Unsplash</a></p>
     </div>
     <div class="right">
         <h1 class="dummy-text">This is not a real online service! You know you need something like this in your life 
-            to help you realize your deepest dreams. <br />Sign up now to get started
+            to help you realize your deepest dreams. <br />Sign up <em>now</em> to get started
         </h1>
-        <h1 class="dummy-text-2">You know you want to.</h1>
+        <h1 class="dummy-text-2">You <em>know</em> you want to.</h1>
     <div class="form-holder">
         <h1>Let's do this!</h1>
-        <form action="" method="get">
+        <form action="" method="get" id="myform">
             <span>
             <label for="First-Name">FIRST NAME</label>
-            <input type="text" id="First-Name">
+            <input type="text" id="First-Name" minlength="3" maxlength="15" placeholder = "John" >
             </span>
             <span>
             <label for="Last-Name">LAST NAME</label>
-            <input type="text" id="Last-Name">
+            <input type="text" id="Last-Name" minlength="3" maxlength="15" placeholder="Smith">
             </span>
             <span>
             <label for="Email">EMAIL</label>
-            <input type="text" id="Email">
+            <input type="email" id="Email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" placeholder="yourmail@example.com">
             </span>
             <span>
             <label for="Phone-Number">PHONE NUMBER</label>
-            <input type="text" id="Phone-Number">
+            <input type="text" id="Phone-Number" pattern="\d{3}\d{3,4}\d{3,4}" placeholder="xxx/xxx-x/xxx-x">
             </span>
             <span>
             <label for="Password">PASSWORD</label>
-            <input type="text" id="Password">
+            <input type="password" id="Password" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*_=+-]).{8,12}$" placeholder="Password123!">
             </span>
             <span>
             <label for="Confirm-Password">CONFIRM PASSWORD</label>
-            <input type="text" id="Confirm-Password">
+            <input type="password" id="Confirm-Password" placeholder="Password123!">
             </span>
         </form>
     </div>
     
-    <button type="submit" class="button">Create account!</button>
+    <button type="submit" class="button" form="myform">Create account!</button>
     <p>Already have an account? <a href="">Log in</a></p></div>
     
 </body>

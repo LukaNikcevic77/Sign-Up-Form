@@ -15,7 +15,7 @@
             <img src="/odin-lined.png" alt="odin-logo">
             <h1>ODIN</h1>
         </div>
-        <p>Photo by <a href="">Halie West</a> on <a href="">Unsplash</a></p>
+        <p>Photo by <a href="https://unsplash.com/@haliewestphoto">Halie West</a> on <a href="https://unsplash.com/photos/25xggax4bSA">Unsplash</a></p>
     </div>
     <div class="right">
         <h1 class="dummy-text">This is not a real online service! You know you need something like this in your life 
@@ -28,26 +28,32 @@
             <span>
             <label for="First-Name">FIRST NAME</label>
             <input type="text" id="First-Name" minlength="3" maxlength="15" placeholder = "John" >
+            <p>*Your name has to be between 3 and 15 letters</p>
             </span>
             <span>
             <label for="Last-Name">LAST NAME</label>
             <input type="text" id="Last-Name" minlength="3" maxlength="15" placeholder="Smith">
+            <p>*Your name has to be between 3 and 15 letters</p>
             </span>
             <span>
             <label for="Email">EMAIL</label>
             <input type="email" id="Email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" placeholder="yourmail@example.com">
+            <p>*Your email needs to have form of yourmail@example.com</p>
             </span>
             <span>
             <label for="Phone-Number">PHONE NUMBER</label>
             <input type="text" id="Phone-Number" pattern="\d{3}\d{3,4}\d{3,4}" placeholder="xxx/xxx-x/xxx-x">
+            <p>*Your phone numer has to be without spaces, dashes or other characters</p>
             </span>
             <span>
             <label for="Password">PASSWORD</label>
             <input type="password" id="Password" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*_=+-]).{8,12}$" placeholder="Password123!">
+            <p>*Your password needs to be between 8 and 12 characters long</p>
             </span>
             <span>
             <label for="Confirm-Password">CONFIRM PASSWORD</label>
-            <input type="password" id="Confirm-Password" placeholder="Password123!">
+            <input type="password" id="Confirm-Password" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*_=+-]).{8,12}$" placeholder="Password123!">
+            <p>*Your passwords don't match</p>
             </span>
         </form>
     </div>

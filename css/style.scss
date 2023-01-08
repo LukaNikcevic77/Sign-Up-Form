@@ -2,7 +2,7 @@
     font-family: "OdinFont";
     src: url(/Norse-Bold.otf);
 }
-
+$displaySize: 900px;
 
 body {
     display: flex;
@@ -32,7 +32,7 @@ body {
             display: flex;
             align-items: center;
             justify-content: center;
-            gap: 10px;
+            gap: 1%;
             font-family: "OdinFont";
             font-size: 100px;
             color: aliceblue;
@@ -68,21 +68,22 @@ body {
         word-break: break-all;
         max-width: 40vw;
         font-size: 24px;
-        line-height: 26px;
-        margin-left: 38px;
-        margin-bottom: 20px;
+        line-height: 100%;
+        margin-left: 3.6%;
+        margin-bottom: 1.8%;
+        margin-top: 2.2%;
       
     }
 
         .dummy-text-2 {
 
-            max-width: 25px;
+            max-width: 2.5%;
             word-break: break-all;
             max-width: 51vw;
             font-size: 24px;
-            line-height: 2.5rem;
-            margin-left: 38px;
-            margin-bottom: 40px;
+            line-height: 170%;
+            margin-left: 3.6%;
+            margin-bottom: 6%;
 
         }
 
@@ -98,28 +99,42 @@ body {
                 display: grid;
                 grid-template-columns: repeat(2, 1fr);
                 grid-template-rows: repeat(3, 1fr);
-                gap: 20px 0px;
+                gap: 8.8% 0px;
+                @media screen and (min-width: 900px) {
+                    gap: 4.8% 0px;
+                    
+                }
                 
                 padding-left: 3.5%;
                 padding-right: 28%;
-                padding-top: 30px;
+                padding-top: 3%;
 
                 span {
                     
                     display: grid;
                     grid-template-columns: 1fr;
                     grid-template-rows: 1fr 1fr;
+                    @media screen and (min-width: 768px) {
+                    margin-top: -3%;
                     
+                    }
+                    p {
+                        
+                        font-size: 12px;
+                        margin: 1% 0px 0px 0px;
+                        
+                        color: transparent;
+                    }
                     
                 }
 
                 input {
                     border: 1px groove black;
                     border-radius: 5px;
-                    min-height: 30px;
-                    max-width: 300px;
-                    margin-top: -8px;
-
+                    min-height: 3vh;
+                    max-width: 80%;
+                    margin-top: -1.3%;
+                    
                    
                    
 
@@ -127,15 +142,22 @@ body {
                         outline: none !important;
                         border: none;
                         box-shadow: 0px 0px 5px 2px rgba(59, 129, 209, 0.575);
+                       
                         
                     }
+                    
 
                     &:invalid {
                         
                         outline: none !important;
                         border: none;
                         box-shadow: 0px 0px 5px 2px rgba(255, 0, 0, 0.575);
+                        $displayStyle: block;
+                        
 
+                    }
+                    &:invalid + p {
+                        color: red;
                     }
                 }
 
@@ -143,13 +165,13 @@ body {
 
             }
              h1 {
-                    max-width: 25px;
+                    max-width: 2.5%;
                     word-break: break-all;
                     max-width: 51vw;
                     font-size: 24px;
-                    margin-bottom: -5px;
-                    margin-left: 38px;
-                    padding-top: 25px;
+                    margin-bottom: -0.5%;
+                    margin-left: 3.6%;
+                    padding-top: 2.5%;
                 }
             
 
@@ -161,19 +183,19 @@ body {
             font-weight: light;
             border: none;
             border-radius: 15px;
-            padding: 15px 55px;
+            padding: 1.5% 5.5%;
             font-size: 18px;
-            margin-top: 15px;
-            margin-left: 37px;   
-            min-width: 40px;
-            min-height: 20px;
+            margin-top: 1.5%;
+            margin-left: 3.7%;   
+            min-width: 4.0%;
+            min-height: 2.0%;
             background-color: rgba(89,109,72,255);
 
         }
         p{
             font-weight: bold;
-            margin-left: 37px;
-            margin-top: 15px;
+            margin-left: 3.7%;
+            margin-top: 1.5%;
 
             a {
                 font-weight: bold;
@@ -185,3 +207,4 @@ body {
     
 
 }
+
